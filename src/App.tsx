@@ -58,9 +58,9 @@ export default function App() {
             </div>
             <div>
               <span className="font-bold text-base tracking-tight text-white flex items-center gap-2">
-                APEX HVAC <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800">24/7 DISPATCH</span>
+                APEX HVAC <span className="text-xs font-semibold tracking-wider font-mono px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800">24/7 DISPATCH</span>
               </span>
-              <p className="text-[11px] text-zinc-400 font-mono">Emergency Thermal Triage &amp; Certified Fleet</p>
+              <p className="text-xs font-semibold text-zinc-400 font-mono">Emergency Thermal Triage &amp; Certified Fleet</p>
             </div>
           </div>
 
@@ -101,15 +101,15 @@ export default function App() {
             <div className="grid grid-cols-3 gap-4 pt-4 border-t border-zinc-850">
               <div>
                 <p className="text-2xl font-bold font-mono text-white">18 Min</p>
-                <p className="text-xs text-zinc-500 font-mono">Average Triage SLA</p>
+                <p className="text-xs text-zinc-300 font-mono">Average Triage SLA</p>
               </div>
               <div>
                 <p className="text-2xl font-bold font-mono text-emerald-400">94.2%</p>
-                <p className="text-xs text-zinc-500 font-mono">First-Visit Fix Rate</p>
+                <p className="text-xs text-zinc-300 font-mono">First-Visit Fix Rate</p>
               </div>
               <div>
                 <p className="text-2xl font-bold font-mono text-white">4,800+</p>
-                <p className="text-xs text-zinc-500 font-mono">Systems Serviced</p>
+                <p className="text-xs text-zinc-300 font-mono">Systems Serviced</p>
               </div>
             </div>
           </div>
@@ -117,14 +117,14 @@ export default function App() {
           {/* Interactive Live Triage Card */}
           <div id="booking" className="lg:col-span-5 bg-[#0c0c0e] border border-zinc-800 rounded-2xl p-6 shadow-2xl space-y-6">
             <div className="space-y-1">
-              <span className="text-[10px] font-mono uppercase text-emerald-400 font-bold tracking-wider">INSTANT DISPATCH WIZARD</span>
+              <span className="text-xs font-semibold tracking-wider font-mono uppercase text-emerald-400 font-bold tracking-wider">INSTANT DISPATCH WIZARD</span>
               <h3 className="text-xl font-bold text-white">Request Field Service</h3>
-              <p className="text-xs text-zinc-400">Select your problem profile for immediate computerized triage.</p>
+              <p className="text-base text-zinc-200 leading-relaxed">Select your problem profile for immediate computerized triage.</p>
             </div>
 
             <div className="space-y-4">
               <div>
-                <label className="text-xs font-mono text-zinc-400 block mb-2">1. Priority Level</label>
+                <label className="text-sm font-semibold font-mono text-zinc-400 block mb-2">1. Priority Level</label>
                 <div className="grid grid-cols-3 gap-2">
                   <button
                     type="button"
@@ -157,7 +157,7 @@ export default function App() {
               </div>
 
               <div>
-                <label className="text-xs font-mono text-zinc-400 block mb-2">2. Equipment Class</label>
+                <label className="text-sm font-semibold font-mono text-zinc-400 block mb-2">2. Equipment Class</label>
                 <div className="grid grid-cols-3 gap-2">
                   <button
                     type="button"
@@ -207,23 +207,23 @@ export default function App() {
                     type="text"
                     required
                     placeholder="Customer Name / Organization"
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900 border border-zinc-700 text-xs font-mono text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-400"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900 border border-zinc-700 text-base min-h-[44px] font-mono text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-400"
                   />
                   <input
                     type="text"
                     required
                     placeholder="Site Street Address & Zip"
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900 border border-zinc-700 text-xs font-mono text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-400"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900 border border-zinc-700 text-base min-h-[44px] font-mono text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-400"
                   />
                   <input
                     type="tel"
                     required
                     placeholder="Dispatch Contact Phone"
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900 border border-zinc-700 text-xs font-mono text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-400"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900 border border-zinc-700 text-base min-h-[44px] font-mono text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-400"
                   />
                   <button
                     type="submit"
-                    className="w-full py-3 rounded-xl bg-emerald-500 text-black font-semibold text-xs font-mono uppercase tracking-wider hover:bg-emerald-400 transition-colors cursor-pointer"
+                    className="w-full py-3 rounded-xl bg-emerald-500 text-black font-semibold text-base font-semibold min-h-[44px] font-mono uppercase tracking-wider hover:bg-emerald-400 transition-colors cursor-pointer"
                   >
                     Confirm Dispatch Triage
                   </button>
@@ -232,7 +232,7 @@ export default function App() {
                 <div className="p-4 rounded-xl bg-emerald-950/40 border border-emerald-800 text-center space-y-2">
                   <CheckCircle2 className="w-6 h-6 text-emerald-400 mx-auto" />
                   <p className="text-xs font-bold text-white">Technician Dispatched!</p>
-                  <p className="text-[11px] text-zinc-400 font-mono">Van #1 (Devon Vance) has been queued with your equipment profile.</p>
+                  <p className="text-xs font-semibold text-zinc-400 font-mono">Van #1 (Devon Vance) has been queued with your equipment profile.</p>
                 </div>
               )}
             </div>
@@ -244,7 +244,7 @@ export default function App() {
           <div className="space-y-2 text-center max-w-2xl mx-auto">
             <span className="text-xs font-mono text-emerald-400 uppercase tracking-wider font-bold">COMMERCIAL &amp; RESIDENTIAL INFRASTRUCTURE</span>
             <h2 className="text-3xl font-bold text-white">Built for Private Equity &amp; Regional Trade Portfolios</h2>
-            <p className="text-xs text-zinc-400">Engineered with multi-branch service agreements, inventory barcode audits, and live GPS dispatching.</p>
+            <p className="text-base text-zinc-200 leading-relaxed">Engineered with multi-branch service agreements, inventory barcode audits, and live GPS dispatching.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -253,7 +253,7 @@ export default function App() {
                 <Truck className="w-5 h-5" />
               </div>
               <h4 className="text-lg font-bold text-white">Mobile Parts Depot Fleet</h4>
-              <p className="text-xs text-zinc-400 leading-relaxed">
+              <p className="text-base text-zinc-200 leading-relaxed leading-relaxed">
                 Every service transit van carries 1,200+ fast-moving OEM capacitors, contactors, TXV valves, and refrigerant cylinders.
               </p>
             </div>
@@ -263,7 +263,7 @@ export default function App() {
                 <ShieldCheck className="w-5 h-5" />
               </div>
               <h4 className="text-lg font-bold text-white">Annual Membership Agreements</h4>
-              <p className="text-xs text-zinc-400 leading-relaxed">
+              <p className="text-base text-zinc-200 leading-relaxed leading-relaxed">
                 Automated seasonal coil cleaning, heat exchanger inspections, and priority zero-wait triage for enrolled estates.
               </p>
             </div>
@@ -273,7 +273,7 @@ export default function App() {
                 <Activity className="w-5 h-5" />
               </div>
               <h4 className="text-lg font-bold text-white">Supabase PostgreSQL Sync</h4>
-              <p className="text-xs text-zinc-400 leading-relaxed">
+              <p className="text-base text-zinc-200 leading-relaxed leading-relaxed">
                 Real-time job logging, technician GPS status, equipment warranty archives, and digital customer signature sign-offs.
               </p>
             </div>
@@ -283,7 +283,7 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-zinc-800/80 bg-[#09090b] py-8 text-center text-xs text-zinc-500 font-mono">
+      <footer className="border-t border-zinc-800/80 bg-[#09090b] py-8 text-center text-xs text-zinc-300 font-mono">
         <p>© 2026 APEX HVAC DISPATCH OS &bull; Turnkey Digital Operating System &bull; Ghost Factory™ Flagship #56</p>
       </footer>
 
