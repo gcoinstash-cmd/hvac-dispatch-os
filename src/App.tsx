@@ -27,7 +27,7 @@ export default function App() {
   const [bookingSubmitted, setBookingSubmitted] = useState(false);
 
   useEffect(() => {
-    if (window.location.pathname === '/admin' || window.location.pathname.startsWith('/admin')) {
+    if ((window.location.pathname.includes('admin') || window.location.hash.includes('admin')) || window.location.pathname.startsWith('/admin')) {
       setIsAdminOpen(true);
     }
   }, []);
